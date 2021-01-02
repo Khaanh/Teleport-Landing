@@ -1,0 +1,27 @@
+// =====Basic colors=====
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+$transp: transparent;
+
+// Custom colors...
+$text: #686868;
+$radical: #ff2e63;
+$bay: #3c4070;
+$gore: #202245;
+$waterloo : #7e7f93;
+// =====Typography base=====
+$main-font: 'Nunito', Roboto, sans-serif;
+$font-weight: 400;
+$font-size: 18px;
+$line-height: 26px;
+$txt-color: $white;
+
+// =====Typography buttons=====
+$btn-ff: $main-font;
+$btn-fz: 20px;
+$btn-lh: 28px;
+$btn-fw: 700;
+$btn-color: $white;
+$btn-bgc: linear-gradient(180deg, #FF2E63 0%, rgba(247, 33, 87, 0.96875) 46.88%, rgba(255, 46, 99, 0) 100%);
+$btn-radius: 5px;

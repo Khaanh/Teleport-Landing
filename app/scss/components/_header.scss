@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: $gore;
+  height: 76px;
+  padding: 20px 0;
+}
+
+.header-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {}
+
+.nav {
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 28px;
+
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 26px;
+        color: #fff;
+        transition: 0.3s ease;
+        padding: 6px;
+      }
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:first-child {
+      margin-right: 36px;
+    }
+
+    &:hover {
+      @media only screen and (min-width: 1025px) {
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &.icon-login {
+      background-image: url(../img/icon-login.svg);
+    }
+    &.icon-registr {
+      background-image: url(../img/icon-registr.svg);
+    }
+  }
+
+  span {
+    color: $waterloo;
+    transition: 0.3s ease;
+  }
+}
+
+.login-link {
+  &__icon {}
+}
+
+.registr-link {
+  &__icon {}
+}
