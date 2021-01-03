@@ -123,4 +123,4 @@ gulp.task('watch', function() {
 	gulp.watch('./app/fonts/**/*.*', gulp.parallel('fonts'));
 })
 
-gulp.task('default', gulp.parallel('browser-sync','watch', ['html','clean','sass', 'js-libs', 'js', 'img-min', 'svg-min', 'fonts', 'favicon']))
+gulp.task('default', gulp.parallel('browser-sync','watch', ['html','clean','sass', 'js-libs', 'js', 'img-min', 'fonts', 'favicon']))
