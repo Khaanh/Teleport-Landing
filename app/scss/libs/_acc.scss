@@ -39,6 +39,14 @@
   position: absolute;
   top: 30px;
   right: 36px;
+  opacity: 1;
+  transition: 0.2s ease;
+  
+  &:hover {
+    @media only screen and (min-width: 1025px) {
+      opacity: 0.8;
+    }
+  }
 
   &:after,
   &:before {
