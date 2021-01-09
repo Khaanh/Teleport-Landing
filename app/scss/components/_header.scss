@@ -21,6 +21,16 @@
 .nav {
   margin-left: 76px;
 
+  @media only screen and (max-width: 1200px) {
+    margin-left: 46px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -28,6 +38,10 @@
 
     li {
       margin: 0 28px;
+
+      @media only screen and (max-width: 1200px) {
+        margin: 0 18px;
+      }
 
       a {
         text-decoration: none;
@@ -77,6 +91,10 @@
 
     &:first-child {
       margin-right: 36px;
+
+      @media only screen and (max-width: 1024px) {
+        margin-right: 24px;
+      }
     }
 
     &:hover {
@@ -99,14 +117,13 @@
     margin-right: 18px;
     opacity: 1;
     transition: 0.3s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      background-size: auto;
-      background-position: center;
-      background-repeat: no-repeat;
+    @media only screen and (max-width: 1024px) {
+      width: 34px;
+      height: 34px;
+      margin: 0 auto;
     }
 
     &.icon-login {
@@ -120,6 +137,10 @@
   span {
     color: #fff;
     transition: 0.3s ease;
+
+    @media only screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 }
 
@@ -129,4 +150,47 @@
 
 .registr-link {
   &__icon {}
+}
+
+.burger {
+  display: none;
+  height: 34px;
+  width: 34px;
+  position: relative;
+
+  @media only screen and (max-width: 1024px) {
+    display: block;
+  }
+
+  span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: $white;
+    transition: 0.3s ease;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    left: 0;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: $white;
+      transition: 0.3s ease;
+      height: 2px;
+      right: 0;
+      bottom: -8px;
+      width: 100%;
+    }
+  }
+
+  &.is-open {
+    span {
+      &:after {
+        width: 70%;
+      }
+    }
+  }
 }
